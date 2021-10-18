@@ -14,5 +14,7 @@
 # La sumatoria se deberá ir guardando en la variable "suma"
 numeros = [1, 5, -1, 6, 10, 2, -5]
 suma = 0   # Variable ya inicializada, la suma arranca en cero
-
-print("terminamos!, el resultado final almacenado en suma debe ser 18")
+for i in  numeros:
+    suma = i + suma
+    print("para el numero :",i , "la sumatoria da :", suma)
+print("terminamos!, el resultado final almacenado en suma debe ser 18 y es :", suma)
