@@ -35,3 +35,38 @@ alguno de lo soportados o no es la palabra "FIN".
 
 print("Mi Calculadora (^_^)")
 # Empezar aquí la resolución del ejercicio
+
+while True:
+    num1= int(input("ingrese el primer numero :"))
+    num2= int(input(" ingrese el segundo numero :"))
+    print("recuerde escribir FIN para salir")
+    operador=str(input("ingrese operador: + suma, -resta, *multiplicar, /dividir, **potencia o FIN si desea salir:"))
+    if operador == "FIN":
+        print("GRACIAS")
+        break
+    elif operador=="+":
+        suma=num1+num2
+        print("El resultado de la suma es : ", suma)
+    elif operador =="-":
+        resta=num1-num2
+        print("El resultado de la resta es : ", resta)  
+    elif operador =="*":
+        multi=num1*num2
+        print("El resultado de la multiplicación es : ", multi)
+    elif operador =="/":
+        div=num1/num2
+        print("El resultado de la división es : ", div)
+    elif operador =="**":
+        pot=num1**num2
+        print("El resultado de la potencia es : ", pot)
+    else:
+        if (operador != "+" and operador !="-" and operador !="*" and operador !="/" and operador !="**"):
+             print("ERROR")
+    
+
+
+    
+       
+
+
+
