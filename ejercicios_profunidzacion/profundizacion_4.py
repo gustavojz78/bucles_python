@@ -48,8 +48,30 @@ temperatura_min = None      # Aquí debe ir almacenando la temp mínima
 temperatura_sumatoria = 0   # Aquí debe ir almacenando la suma de todas las temp
 temperatura_promedio = 0    # Al finalizar el loop deberá aquí alamcenar el promedio
 temperatura_len = 0         # Aquí debe almacenar cuantas temperatuas hay en la lista
-
+i=0
 # Colocar el bucle aqui......
+
+for num in temp_dataloger:
+    i+=1
+    temperatura_sumatoria+=num
+    temperatura_max = max(temp_dataloger)
+    temperatura_min = min(temp_dataloger)
+    temperatura_len=len(temp_dataloger)
+    print(i, ".-", num)
+print("Esta es la maxima",temperatura_max)
+print("Esta es la minima", temperatura_min)
+print("Se contaron", i, " temperaturas")
+print("Temperatura promedio por contador", temperatura_sumatoria/i)
+print("Temperatura promedio por longitud de la lista",temperatura_sumatoria/temperatura_len)
+temperatura_promedio = temperatura_sumatoria/temperatura_len
+if temperatura_promedio > 19 and temperatura_promedio < 28:
+    print("Es Verano!!!")
+elif temperatura_promedio > 11 and temperatura_promedio < 20:
+    print("Es Otoño!!!")
+elif temperatura_promedio > 8 and temperatura_promedio < 14:
+    print("Es Invierno!!!")
+else:
+    print("Es Primavera!!!")
 
 # Al finalizar el bucle compare si el valor que usted calculó para
 # temperatura_max y temperatura_min coincide con el que podría calcular
